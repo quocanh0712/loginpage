@@ -26,20 +26,23 @@ class _LoginScreenState extends State<LoginScreen> {
               ]),
           height: 40,
           width: 240,
-          child: const TextField(
-            keyboardType: TextInputType.emailAddress,
-            style: TextStyle(
-                color: Colors.black87,
-                fontFamily: 'Blinker-SemiBold.ttf',
-                fontSize: 12),
-            decoration: InputDecoration(
-                border: InputBorder.none,
-                contentPadding: EdgeInsets.only(
-                  top: 10.0,
-                ),
-                prefixIcon: Icon(Icons.person, size: 18),
-                hintText: 'Email',
-                hintStyle: TextStyle(color: Colors.black26)),
+          child: Container(
+            margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+            child: const TextField(
+              keyboardType: TextInputType.emailAddress,
+              style: TextStyle(
+                  color: Colors.black87,
+                  fontFamily: 'Blinker-SemiBold.ttf',
+                  fontSize: 12),
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.only(
+                    top: 10.0,
+                  ),
+                  prefixIcon: Icon(Icons.person, size: 18),
+                  hintText: 'Email',
+                  hintStyle: TextStyle(color: Colors.black26)),
+            ),
           ),
         ),
       ],
@@ -61,20 +64,23 @@ class _LoginScreenState extends State<LoginScreen> {
               ]),
           height: 40,
           width: 240,
-          child: const TextField(
-            obscureText: true,
-            style: TextStyle(
-                color: Colors.black87,
-                fontFamily: 'Blinker-SemiBold.ttf',
-                fontSize: 12),
-            decoration: InputDecoration(
-                border: InputBorder.none,
-                contentPadding: EdgeInsets.only(
-                  top: 10.0,
-                ),
-                prefixIcon: Icon(Icons.lock, size: 18),
-                hintText: 'Password',
-                hintStyle: TextStyle(color: Colors.black26)),
+          child: Container(
+            margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+            child: const TextField(
+              obscureText: true,
+              style: TextStyle(
+                  color: Colors.black87,
+                  fontFamily: 'Blinker-SemiBold.ttf',
+                  fontSize: 12),
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.only(
+                    top: 10.0,
+                  ),
+                  prefixIcon: Icon(Icons.lock, size: 18),
+                  hintText: 'Password',
+                  hintStyle: TextStyle(color: Colors.black26)),
+            ),
           ),
         ),
       ],
